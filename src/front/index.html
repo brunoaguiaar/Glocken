@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CT Glocken</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/angular-toastr/dist/angular-toastr.css">
+  </head>
+
+  <body class="stack-body" ng-app="Container">
+    <section ng-view></section>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js" type="text/javascript"></script>
+
+  <script src="js/app.js"></script>
+  <script src="js/header.controller.js"></script>
+  
+
+  <script src="service/containerService.js" type="text/javascript"></script>
+  <script src="service/usuarioService.js" type="text/javascript"></script>
+
+  <script src="login/loginController.js" type="text/javascript"></script>
+
+  <script src="cadastro/cadastro.controller.js" type="text/javascript"></script>
+  <script src="cadastro/cadastro.service.js" type="text/javascript"></script>
+</html>
