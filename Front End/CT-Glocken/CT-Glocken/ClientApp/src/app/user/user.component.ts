@@ -5,7 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
+
 export class UserComponent implements OnInit {
+
+  //Variables
 
   constructor() { }
 
@@ -13,3 +16,5 @@ export class UserComponent implements OnInit {
   }
 
 }
+
+
