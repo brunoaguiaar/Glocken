@@ -1,0 +1,100 @@
+<!--Create User-->
+<mat-card>
+    <mat-card-title>
+        <u>Criar Usuário</u>
+    </mat-card-title>
+
+    <mat-card-content class="form-container">
+        <form [formGroup]="userForm">
+
+            <br>
+
+            <div class="container-row">
+
+                <mat-form-field>
+                    <input matInput placeholder="Nome Completo" formControlName="fullName" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="E-mail" formControlName="email" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker"
+                        placeholder="Data de Nascimento" formControlName="birthday" autocomplete="off">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker touchUi="true" #picker></mat-datepicker>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-select placeholder="Gênero" formControlName="gender">
+                        <mat-option *ngFor="let gender of genderOptions" value="{{gender.id}}">{{gender.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+
+            <br>
+
+            <div class="container-row">
+
+                <mat-form-field>
+                    <input matInput placeholder="Telefone" formControlName="phone" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Telefone Emergencial" formControlName="emergencyPhone"
+                        autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="CPF" formControlName="cpf" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="RG" formControlName="rg" autocomplete="off">
+                </mat-form-field>
+
+            </div>
+
+            <br>
+
+            <div class="container-row">
+
+                <mat-form-field>
+                    <textarea matInput placeholder="Endereço" matTextareaAutosize maxlength="80"
+                        formControlName="address"></textarea>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <input matInput placeholder="Profissão" formControlName="job" autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-select placeholder="Contrato" formControlName="contract">
+                        <mat-option *ngFor="let contract of contractOptions" value="{{contract.id}}">{{contract.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-select placeholder="Tipo" formControlName="type">
+                        <mat-option *ngFor="let type of typeOptions" value="{{type.id}}">{{type.name}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+            </div>
+
+            <div class="btn-group">
+
+                <button mat-raised-button color="primary" (click)="onSubmit()">Criar Usuário</button>
+                <button mat-raised-button type="reset" color="basic" (click)="onClear()"
+                    style="margin-left: 10px">Limpar</button>
+
+            </div>
+
+        </form>
+    </mat-card-content>
+</mat-card>
