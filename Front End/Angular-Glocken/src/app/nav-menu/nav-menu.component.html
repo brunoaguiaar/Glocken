@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    <a class=" navbar-brand" routerLink='/'>
+    CT Glocken
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse sidenav" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink='/home' routerLinkActive="active">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Admin</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" routerLink='/admin-create' routerLinkActive="active">Criar Usuário</a>
+                    <a class="dropdown-item" routerLink='/admin-edit' routerLinkActive="active">Editar Usuário</a>
+                </div>
+            </li>
+            <a class="nav-link" routerLink='/admin' routerLinkActive="active">
+                Ajuda
+            </a>
+        </ul>
+    </div>
+</nav>

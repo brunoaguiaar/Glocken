@@ -1,0 +1,42 @@
+.form-container .container-row .mat-form-field+.mat-form-field {
+    margin-left: 8px;
+}
+
+.form-container .mat-form-field {
+    width: 220px;
+}
+
+.form-container form {
+    margin-bottom: 20px;
+}
+
+.form-containerform>* {
+    margin: 5px 0;
+}
+
+.form-container .mat-radio-button {
+    margin: 0 12px;
+}
+
+.mat-card-title {
+    text-align: center;
+}
+
+mat-card {
+    max-width: 95%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+mat-toolbar-row {
+    justify-content: space-between;
+}
+
+.form-container .btn-group {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.example-full-width {
+    width: 300px;
+}
