@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-    <a class=" navbar-brand" routerLink='/'>
-    CT Glocken
+<nav class="navbar navbar-expand-lg navbar" *ngIf="currentUser">
+    <a class="navbar-brand" routerLink='/'>
+        CT Glocken
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -10,11 +10,9 @@
 
     <div class="collapse navbar-collapse sidenav" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" routerLink='/home' routerLinkActive="active">
-                    Home
-                </a>
-            </li>
+            <a class="nav-link" routerLink='/student-area' routerLinkActive="active">
+                Área do Aluno
+            </a>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">Admin</a>
@@ -23,9 +21,12 @@
                     <a class="dropdown-item" routerLink='/admin-edit' routerLinkActive="active">Editar Usuário</a>
                 </div>
             </li>
-            <a class="nav-link" routerLink='/admin' routerLinkActive="active">
+            <a class="nav-link" routerLink='/help' routerLinkActive="active">
                 Ajuda
             </a>
+        </ul>
+        <ul class="navbar-nav my-2 my-lg-0">
+            <a class="nav-link" style="cursor: pointer;" (click)="logout()">Logout</a>
         </ul>
     </div>
 </nav>

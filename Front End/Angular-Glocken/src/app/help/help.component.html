@@ -1,0 +1,127 @@
+<mat-card>
+    <mat-card-title>
+        <u>Ajuda</u>
+    </mat-card-title>
+
+    <mat-card-content class="form-container">
+
+        <div class="action-buttons">
+            <button mat-button (click)="accordion.openAll()">Expandir Todos</button>
+            <button mat-button (click)="accordion.closeAll()">Recolher Todos</button>
+        </div>
+
+        <mat-accordion class="headers-align" multi>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Sugestões & Melhorias</b>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Nos ajude a melhorar o site da CT Glocken dando sua opinião
+                        <mat-icon>star_grade</mat-icon>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <div class="container-row" style="display: flex; justify-content: center;">
+                    <mat-form-field style="width: 25em">
+                        <mat-label>O que você gosta do site?</mat-label>
+                        <textarea matTextareaAutosize maxlength="80" matInput></textarea>
+                    </mat-form-field>
+
+                    <mat-form-field style="width: 25em">
+                        <mat-label>O que poderia mudar / melhorar?</mat-label>
+                        <textarea matTextareaAutosize maxlength="80" matInput></textarea>
+                    </mat-form-field>
+                </div>
+
+                <mat-divider></mat-divider>
+
+                <div
+                    style="display:flex; flex-direction: row; justify-content: center; align-items: center; margin-top: 1em;">
+                    <ng-container *ngFor="let star of stars">
+                        <app-star [starId]="star" [rating]="hoverState || rating" (enter)="enter($event)"
+                            (leave)="leave($event)" (bigClick)="updateRating(star)">
+                        </app-star>
+                    </ng-container>
+                    <a>Avalie sua experiência de 1 a 5.</a>
+                </div>
+
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Marcar Avaliação</b>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Marque sua avaliação com nossos professores
+                        <mat-icon>date_range</mat-icon>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <mat-form-field>
+                    <mat-label>Nome</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Idade</mat-label>
+                    <input matInput autocomplete="off">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Data da avaliação</mat-label>
+                    <input matInput [matDatepicker]="picker" (focus)="picker.open()" readonly>
+                </mat-form-field>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <b>Detalhes & Informações</b>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        Mais detalhes da CT Glocken, localização e contato
+                        <mat-icon>info</mat-icon>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>
+
+                <mat-list>
+                    <span><b>Endereço</b></span>
+                    <mat-list-item> R. Itaporanga, 35 - Jardim Mauá, Novo Hamburgo - RS, 93548-200 </mat-list-item>
+                </mat-list>
+
+                <mat-list>
+                    <span><b>Contato</b></span>
+                    <mat-list-item> (51) 99388-0067 </mat-list-item>
+                </mat-list>
+
+                <mat-list>
+                    <span><b>Horários</b></span>
+                    <mat-list-item> Segunda-feira 6AM–1PM, 4–9PM </mat-list-item>
+                    <mat-list-item> Terça-feira 6AM–1PM, 4–9PM </mat-list-item>
+                    <mat-list-item> Quarta-feira 6AM–1PM, 4–9PM </mat-list-item>
+                    <mat-list-item> Quinta-feira 6AM–1PM, 4–9PM </mat-list-item>
+                    <mat-list-item> Sexta-feira 6AM–1PM, 4–7PM </mat-list-item>
+                    <mat-list-item> Sábado Fechado </mat-list-item>
+                    <mat-list-item> Domingo Fechado </mat-list-item>
+                </mat-list>
+
+            </mat-expansion-panel>
+
+        </mat-accordion>
+
+        <!-- <div class="container sub">
+        <mat-grid-list cols="4" rowHeight="100px">
+            <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows"
+                [style.background]="tile.color">
+                {{tile.text}}
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div> -->
+
+    </mat-card-content>
+</mat-card>

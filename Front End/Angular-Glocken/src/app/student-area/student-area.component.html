@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-title>
+        <u>Área do Aluno</u>
+        <br>
+        <br>
+        <a>
+            <span class="blackText">Will</span><span class="redText">kom</span><span class="yellowText">men,</span>
+            <span> {{userName}}</span><span class="blackText">!</span>
+        </a>
+    </mat-card-title>
+
+    <a class="welcome-message" style="position:absolute; top:1em; right:1em; font-size: 18px;"><span>Dia
+            {{day}}</span><span> de</span><span style="text-transform: capitalize;"> {{month}}</span><span
+            style="text-transform: capitalize;"> -
+            {{dayWeek}}</span></a>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content class="form-container">
+        <app-calendar>
+        </app-calendar>
+    </mat-card-content>
+
+</mat-card>

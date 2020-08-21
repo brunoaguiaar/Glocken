@@ -1,0 +1,275 @@
+mat-card {
+    max-width: 100%;
+    text-align: center;
+}
+
+.form-container .btn-group {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.blackText {
+    color: #000000;
+}
+
+.redText {
+    color: #DD0000;
+}
+
+.yellowText {
+    color: #FFCE00;
+}
+
+.bannerFaq {
+    height: 300px;
+    background-image: url("../../assets/img/faq.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.banner-container {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-transform: uppercase !important;
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 500;
+}
+
+.container-buttons {
+    margin-top: 1em;
+}
+
+.banner-buttons {
+    width: 250px;
+    height: 48px;
+    font-size: 20px
+}
+
+.teacher-box-content {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 250px;
+}
+
+.teacher-box-01 {
+    background-image: url("../../assets/img/lucas01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.teacher-box-02 {
+    background-image: url("../../assets/img/matheus01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.teacher-box-03 {
+    background-image: url("../../assets/img/guilherme01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.teacher-group {
+    text-align: center;
+}
+
+.methodology-box-content {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 250px;
+}
+
+.methodology-box-01 {
+    background-image: url("../../assets/img/equipamento01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.methodology-box-02 {
+    background-image: url("../../assets/img/treinamento01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.methodology-box-03 {
+    background-image: url("../../assets/img/funcional01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.methodology-group {
+    text-align: center;
+}
+
+.gym-group {
+    text-align: center;
+}
+
+.gym-box-content {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 250px;
+}
+
+.gym-box-01 {
+    background-image: url("../../assets/img/academia01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-box-02 {
+    background-image: url("../../assets/img/academia02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-box-03 {
+    background-image: url("../../assets/img/academia03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-box-04 {
+    background-image: url("../../assets/img/academia03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-box-05 {
+    background-image: url("../../assets/img/academia03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-box-06 {
+    background-image: url("../../assets/img/academia03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+}
+
+.gym-group {
+    text-align: center;
+}
+
+.mat-table-label {
+    justify-content: center !important;
+}

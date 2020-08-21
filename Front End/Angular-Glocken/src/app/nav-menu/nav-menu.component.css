@@ -2,6 +2,7 @@ a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
+  color: white;
 }
 
 html {
@@ -18,6 +19,41 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-.active {
-  color: rgba(0, 0, 0, .9);
+.active-red {
+  color: #DD0000 !important;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: red;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover {
+  color: red;
+}
+
+.navbar-nav .nav-item .dropdown-item.active {
+  background-color: black;
+}
+
+
+.navbar-nav .nav-link:hover {
+  color: red;
+}
+
+a.nav-link {
+  text-transform: uppercase !important;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+a.dropdown-item {
+  text-transform: uppercase !important;
+}
+
+.navbar {
+  position: absolute !important;
+  width: 100% !important;
+  z-index: 10 !important;
+  max-width: 100% !important;
 }
