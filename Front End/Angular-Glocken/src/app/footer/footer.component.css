@@ -1,12 +1,25 @@
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-bottom: 0px;
-    background-color: gray;
-    color: white;
-}
-
 .copyright {
     font-size: 0.80rem;
+}
+
+.footer {
+    text-transform: uppercase !important;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-main {
+    margin-left: 10em;
+    margin-right: 10em;
+    margin-bottom: 1em;
+}
+
+.banner-text {
+    font-family: Roboto;
+    color: #e0e1e2;
+    font-size: 16px;
+    text-align: center;
+}
+
+.custom-divider {
+    border-top-color: #e0e1e2;
 }

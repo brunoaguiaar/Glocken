@@ -40,3 +40,13 @@ mat-toolbar-row {
 .example-full-width {
     width: 300px;
 }
+
+/* Success Snackbar */
+::ng-deep .success-snackbar {
+    color: black !important;
+    background-color: #45E521 !important;
+}
+
+::ng-deep .success-snackbar .mat-simple-snackbar-action {
+    color: black !important;
+}

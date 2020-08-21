@@ -1,0 +1,35 @@
+.action-buttons {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.headers-align .mat-expansion-panel-header-title, .headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+
+.headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headers-align .mat-form-field+.mat-form-field {
+    margin-left: 2em;
+}
+
+.mat-card-title {
+    text-align: center;
+}
+
+mat-card {
+    max-width: 95%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+::ng-deep .mat-list-base .mat-list-item .mat-list-item-content {
+    justify-content: center;
+}
+
+.mat-list-item {
+    font-size: 14px !important;
+}

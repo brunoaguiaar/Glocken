@@ -1,11 +1,11 @@
 <!--Create User-->
 <mat-card>
-    <mat-card-title>
+    <mat-card-title style="margin-top: 2em">
         <u>Criar Usuário</u>
     </mat-card-title>
 
     <mat-card-content class="form-container">
-        <form [formGroup]="userForm">
+        <form [formGroup]="userForm" #formDirective="ngForm">
 
             <br>
 
@@ -21,7 +21,7 @@
 
                 <mat-form-field>
                     <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker"
-                        placeholder="Data de Nascimento" formControlName="birthday" autocomplete="off">
+                        placeholder="Data de Nascimento" formControlName="birthday" autocomplete="off" #dateInput>
                     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker touchUi="true" #picker></mat-datepicker>
                 </mat-form-field>
@@ -40,20 +40,21 @@
             <div class="container-row">
 
                 <mat-form-field>
-                    <input matInput placeholder="Telefone" formControlName="phone" autocomplete="off">
+                    <input matInput placeholder="Telefone" formControlName="phone" autocomplete="off"
+                        [spMask]="phoneMask">
                 </mat-form-field>
 
                 <mat-form-field>
                     <input matInput placeholder="Telefone Emergencial" formControlName="emergencyPhone"
-                        autocomplete="off">
+                        autocomplete="off" [spMask]="phoneMask">
                 </mat-form-field>
 
                 <mat-form-field>
-                    <input matInput placeholder="CPF" formControlName="cpf" autocomplete="off">
+                    <input matInput placeholder="CPF" formControlName="cpf" autocomplete="off" [spMask]="cpfMask">
                 </mat-form-field>
 
                 <mat-form-field>
-                    <input matInput placeholder="RG" formControlName="rg" autocomplete="off">
+                    <input matInput placeholder="RG" formControlName="rg" autocomplete="off" [spMask]="rgMask">
                 </mat-form-field>
 
             </div>
@@ -87,11 +88,16 @@
 
             </div>
 
+            <br>
+
             <div class="btn-group">
 
-                <button mat-raised-button color="primary" (click)="onSubmit()">Criar Usuário</button>
-                <button mat-raised-button type="reset" color="basic" (click)="onClear()"
-                    style="margin-left: 10px">Limpar</button>
+                <button mat-raised-button color="primary" [disabled]="this.userForm.invalid"
+                    (click)="submitDialog()">Criar
+                    Usuário</button>
+                <button mat-raised-button color="basic" (click)="onClear()"
+                    [disabled]="this.userForm.untouched && this.userForm.pristine" style="
+                    margin-left: 10px">Limpar</button>
 
             </div>
 
